@@ -38,12 +38,12 @@ def main():
     monthly_payment, semi_monthly_payment, bi_weekly_payment, rapid_bi_weekly_payment, weekly_payment, rapid_weekly_payment = mortgage_payments(principal_input, interest_input, amortization_input)
 
     # Print out the calculated values
-    print(f"Your Monthly Payment Is: ${monthly_payment}")
-    print(f"Your Semi-Monthly Payment Is: ${semi_monthly_payment}")
-    print(f"Your Bi-Weekly Payment Is: ${bi_weekly_payment}")
-    print(f"Your Rapid Bi-Weekly Payment Is: ${rapid_bi_weekly_payment}")
-    print(f"Your Weekly Payment Is: ${weekly_payment}")
-    print(f"Your Rapid Weekly Payment Is: ${rapid_weekly_payment}")
+    print(f"Monthly Payment: ${monthly_payment}")
+    print(f"Semi-Monthly Payment: ${semi_monthly_payment}")
+    print(f"Bi-Weekly Payment: ${bi_weekly_payment}")
+    print(f"Weekly Payment: ${weekly_payment}")
+    print(f"Rapid Bi-Weekly Payment: ${rapid_bi_weekly_payment}")
+    print(f"Rapid Weekly Payment: ${rapid_weekly_payment}")
 
 # Run the code if the script is executed directly and not when it is imported to another module
 if __name__ == "__main__":
