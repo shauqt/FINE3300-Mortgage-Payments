@@ -17,10 +17,33 @@ def mortgage_payments(principal, interest, ammortization):
     rapid_weekly_payment = monthly_payment / 4
     
     # Return payment values, rounding to two decimal places
-    return
+    return (
+        round(monthly_payment, 2),
+        round(semi_monthly_payment, 2), 
+        round(bi_weekly_payment, 2), 
+        round(rapid_bi_weekly_payment, 2), 
+        round(weekly_payment, 2), 
+        round(rapid_weekly_payment, 2)
+    )
 
 def main():
 
+    # Store user inputs for principal, interest, and ammortization as variables
+    principal_input = float(input("Please provide the principal amount: "))
+    interest_input = float(input("Please provide the interest rate: "))
+    ammortization_input = float(input("Please provide ammorization period: "))
 
-if __name__ == '__main__':
+    # Call the mortgage payments function and store the values into the variables
+    monthly_payment, semi_monthly_payment, bi_weekly_payment, rapid_bi_weekly_payment, weekly_payment, rapid_weekly_payment = mortgage_payments(principal_input, interest_input, ammortization_input)
+
+    # Print out the calculated values
+    print(f"Your Monthly Payment Is: {monthly_payment}")
+    print(f"Your Semi-Monthly Payment Is: {semi_monthly_payment}")
+    print(f"Your Bi-Weekly Payment Is: {bi_weekly_payment}")
+    print(f"Your Rapid Bi-Weekly Payment Is: {rapid_bi_weekly_payment}")
+    print(f"Your Weekly Payment Is: {weekly_payment}")
+    print(f"Your Rapid Weekly Payment Is: {rapid_weekly_payment}")
+
+# Run the code if the script is executed directly and not when it is imported to another module
+if __name__ == "__main__":
     main()
