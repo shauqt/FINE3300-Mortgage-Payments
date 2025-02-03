@@ -32,7 +32,7 @@ def main():
     # Store user inputs for principal, interest, and ammortization as variables
     principal_input = float(input("Please provide the principal amount: "))
     interest_input = float(input("Please provide the interest rate: ")) / 100
-    amortization_input = int(input("Please provide the ammorization period in years: "))
+    amortization_input = int(input("Please provide the amorization period in years: "))
 
     # Call the mortgage payments function and store the values into the variables
     monthly_payment, semi_monthly_payment, bi_weekly_payment, rapid_bi_weekly_payment, weekly_payment, rapid_weekly_payment = mortgage_payments(principal_input, interest_input, amortization_input)
